@@ -99,6 +99,11 @@
   outline: none;
 }
 
+.option-badge > .remove-btn {
+  font-size: 1.25em;
+  color: #777;
+}
+
 .option-badge:hover, .option-badge:focus {
   background-color: hsl(0, 100%, 90%);
   border-color: hsl(0, 100%, 50%);
@@ -106,9 +111,4 @@
 
 .option-badge:hover > .remove-btn, .option-badge:focus > .remove-btn {
   color: hsl(0, 100%, 50%);
-}
-
-.option-badge > .remove-btn {
-  font-size: 1.25em;
-  color: #777;
 }
