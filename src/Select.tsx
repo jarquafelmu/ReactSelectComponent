@@ -31,6 +31,7 @@ export function Select({ multiple, value, options, onChange }: SelectProps) {
     multiple ? onChange([]) : onChange(undefined);
   };
 
+  // using 'useCallback' to prevent unnecessary re-rendering
   const selectOption = useCallback(
     (option: SelectOption) => {
       if (multiple) {
