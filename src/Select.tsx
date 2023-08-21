@@ -29,6 +29,7 @@ export function Select({ value, options, onChange }: SelectProps) {
   }
 
   useEffect(() => {
+    // reset the highlighted option each time the options menu is opened
     if (isOpen) setHighlightedIndex(0);
   }, [isOpen]);
 
