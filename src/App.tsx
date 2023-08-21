@@ -14,6 +14,7 @@ function App() {
   const [value2, setValue2] = useState<SelectOption | undefined>(options[0]);
   return (
     <>
+      <h3>Multiple Select</h3>
       <Select
         multiple
         options={options}
@@ -21,6 +22,7 @@ function App() {
         value={value1}
       />
       <br />
+      <h3>Single Select</h3>
       <Select
         options={options}
         onChange={(option) => setValue2(option)}
